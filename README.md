@@ -1,2 +1,2 @@
 # alpine-nginx
-my version of Docker nginx suing Alpine as base
+My version of Docker nginx using Alpine as base
