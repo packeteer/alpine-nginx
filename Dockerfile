@@ -2,8 +2,8 @@ FROM gliderlabs/alpine
 
 RUN apk-install nginx
 
-VOLUME /etc/nginx:/etc/nginx
-VOLUME /var/www/htdocs:/var/www
+VOLUME conf:/etc/nginx
+VOLUME data:/var/www
 
-EXPOSE 80
+EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
