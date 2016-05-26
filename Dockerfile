@@ -1,9 +1,8 @@
 FROM gliderlabs/alpine
 
-RUN apk-install nginx
+MAINTAINER packeteer <packeteer@gmail.com>
 
-VOLUME conf:/etc/nginx
-VOLUME data:/var/www
+RUN apk-install nginx
 
 EXPOSE 80 443
 CMD ["nginx", "-g", "daemon off;"]
